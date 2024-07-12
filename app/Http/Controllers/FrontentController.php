@@ -90,4 +90,8 @@ class FrontentController extends Controller
         $user = User::find($userId)->delete();
         return  redirect()->route('home')->with('message', 'User Deleted Successfully');
     }
+    public function newroute()
+    {
+        return "new route";
+    }
 }

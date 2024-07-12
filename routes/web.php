@@ -23,4 +23,5 @@ Route::get('/edit-user/{uid}', [FrontentController::class, 'edit'])->name('editU
 Route::post('/save-user', [FrontentController::class, 'saveUser'])->name('saveUser'); // save user to database
 Route::post('/update-user', [FrontentController::class, 'updateUser'])->name('updateUser'); // update user to database
 Route::get('/delete-user/{uid}', [FrontentController::class, 'deleteUser'])->name('deleteUser'); // update user to database
+Route::get('/new-route/{uid}', [FrontentController::class, 'newroute'])->name('newroute'); // update user to database
 
